@@ -1,0 +1,151 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #B0BEC5;
+    color: #333;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+}
+
+header h1 {
+    margin: 0;
+}
+
+.intro {
+    padding: 2em;
+    margin: 1em auto;
+    border-radius: 5px;
+    text-align: center;
+    background-color: #ffffff; 
+    max-width: 1200px; 
+}
+
+.intro h2 {
+    margin-bottom: 0.5em;
+}
+
+.intro a {
+    color: #0000EE;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+.intro a:hover {
+    text-decoration: underline;
+}
+
+.full-width-image {
+    text-align: center;
+    margin: 1em auto;
+    max-width: 1200px;
+}
+
+.full-width-image img {
+    width: 100%;
+    display: block;
+    filter: grayscale(100%);
+    transition: filter 0.3s ease;
+}
+
+.full-width-image img:hover {
+    filter: grayscale(0%);
+}
+
+.content {
+    background-color: #ffffff;
+    padding: 2em;
+    margin: 2em auto;
+    border-radius: 5px;
+    max-width: 1200px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.content h2 {
+    font-family: "Della Respira", serif;
+    margin-bottom: 1em;
+}
+
+.content p {
+    margin-bottom: 2em;
+    line-height: 1.6;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    justify-content: center;
+}
+
+.image-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 375px; 
+}
+
+.content-image {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 0.5em;
+}
+
+.image-caption {
+    font-style: italic;
+    font-size: 0.9em;
+    text-align: center;
+}
+
+
+.cv-billede {
+    text-align: center;
+    margin: 1em auto;
+    max-width: 700px;
+}
+
+.cv-billede img {
+    width: 100%;
+    display: block;
+    filter: grayscale(100%);
+    transition: filter 0.3s ease;
+}
+.cv-billede img:hover {
+    filter: grayscale(0%);
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    .main-content {
+        padding: 1em;
+    }
+
+    .intro,
+    .content {
+        padding: 1em;
+    }
+
+    .content img {
+        margin-bottom: 1em;
+    }
+}
